@@ -1,0 +1,41 @@
+@import url('./container.css');
+@import url('./font.css');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Pretendard-Regular', sans-serif;
+}
+
+body {
+	background-image: url('../assets/image/sky.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	animation: fade-in-down 0.7s ease 1;
+	-webkit-animation: fade-in-down 0.7s ease 1;
+}
+
+p {
+	text-shadow: 0px 1px 12.8px rgba(0, 0, 0, 0.1) ;
+    
+}
+
+@keyframes fade-in-down {
+	0% {
+	  opacity: 0;
+	  transform: translateY(-20px);
+	}
+  
+	100% {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }

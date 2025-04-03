@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/root.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css">
+    <title>MyWeather</title>
+</head>
+
+<body>
+
+    <div class="container bgOutter">
+        <div class="containerMain">
+            <div class="navbar">
+                <p>MyWeather</p>
+                <label class="toggle-container" for="unit-switch">
+                    <input type="checkbox" class="toggle-checkbox" id="unit-switch" checked>
+                    <div class="toggle">
+                        <div class="toggle-switch"></div>
+                        <span class="toggle-text left">
+                            <p>C°</p>
+                        </span>
+                        <span class="toggle-text right">
+                            <p>F°</p>
+                        </span>
+                    </div>
+                </label>
+            </div>
+            <div class="search bgInner" id="f_locator">
+                <input type="text" class="searchInput" placeholder="Enter city name..." id="location" />
+                <img src="./assets/svg/search.svg" id="search-icon" class="search-icon">
+            </div>
+            <div class="weather bgInner">
+                <div class="wLeft">
+                    <p id="locationDisplay"></p>
+                    <p id="description"></p>
+                    <span id="temperature"></span>
+                </div>
+                <div class="wRight">
+                    <div ><span id="date"></span></div>
+                    <p id="timeDisplay"></p>
+                    <i id="wicon-main" class="wi"></i> 
+                </div>
+
+
+            </div>
+            <div class="humidity bgInner">
+                <p>Humidity: <span id="humidity"></span><i></i>%</p>
+                <img src="./assets/svg/humidity.svg">
+
+            </div>
+            <div class="forecast days-box">
+                <div class=" section day-first bgInner">
+                    <p class="day"></p>
+                    <p><i class="wi"></i></p>
+                    <p><span class="d-min-temp"></span> <span class="d-max-temp"></span></p>
+                </div>
+                <div class=" section bgInner">
+                    <p class="day"></p>
+                    <p><i class="wi"></i></p>
+                    <p><span class="d-min-temp"></span> <span class="d-max-temp"></span></p>
+                </div>
+                <div class=" section bgInner">
+                    <p class="day"></p>
+                    <p><i class="wi"></i></p>
+                    <p><span class="d-min-temp"></span> <span class="d-max-temp"></span></p>
+                </div>
+                <div class=" section bgInner">
+                    <p class="day"></p>
+                    <p><i class="wi"></i></p>
+                    <p><span class="d-min-temp"></span> <span class="d-max-temp"></span></p>
+                </div>
+            </div>
+
+        </div>
+       
+    </div>
+    <a href="https://kenan.vercel.app" class="copyright">kenan.vercel.app</a>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./main.js"></script>
+
+
+</html>

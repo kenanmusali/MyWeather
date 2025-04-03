@@ -1,0 +1,239 @@
+.bgOutter {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(30px);
+    outline: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 14px;
+}
+
+.bgInner {
+    background-color: rgba(240, 240, 240, 0.4);
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.05);
+    padding-inline: 10px;
+}
+
+
+
+.container {
+    width: 392px;
+    height: 460px;
+}
+
+.containerMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.search,
+.humidity,
+.navbar,
+.forecast .section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    animation: fade-in-down 0.7s ease 1;
+	-webkit-animation: fade-in-down 0.7s ease 1;
+
+}
+
+.forecast {
+    width: 100%;
+    height: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    animation: fade-in-down 0.7s ease 1;
+	-webkit-animation: fade-in-down 0.7s ease 1;
+}
+
+.forecast .section p {
+    font-size: 12px;
+}
+
+.forecast .section p:nth-child(3) {
+    padding-left: 4px;
+}
+
+.forecast .section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+    color: white;
+}
+
+.forecast .section .wi {
+    font-size: 35px;
+
+}
+
+.weather {
+    width: 100%;
+    height: 135px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    width: 100%;
+    color: white;
+   
+    font-size: 12px;
+}
+
+
+.weather #temperature {
+    font-size: 75px;
+}
+.weather #wicon-main {
+    font-size: 50px;
+margin-top: 1.2rem;
+/* background-color: red; */
+margin-left: 1rem;
+
+}
+
+
+.search input {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: white;
+    font-size: 12px;
+
+}
+
+.search input::placeholder {
+    color: white;
+    font-family: 'Pretendard-Regular', sans-serif;
+    font-size: 12px;
+    text-shadow: 0px 1px 12.8px rgba(0, 0, 0, 0.15);
+}
+
+
+.humidity p {
+    color: white;
+    font-size: 12px;
+    text-shadow: 0px 1px 12.8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar p {
+    font-size: 24px;
+    font-family: 'Pretendard-Bold', sans-serif;
+    color: white;
+}
+
+/*  */
+
+
+
+
+
+
+
+
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    padding-inline: 0 !important;
+    border-radius: 5px;
+    background-color: rgba(240, 240, 240, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.05);
+    padding-inline: 10px;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle {
+    position: relative;
+    display: flex;
+    width: 130px;
+    height: 26px;
+
+    border-radius: 3px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.toggle-text p {
+    font-size: 12px;
+    font-family: 'Pretendard-Regular', sans-serif;
+}
+
+.toggle-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    width: 50%;
+    text-align: center;
+}
+
+.left {
+    left: 0;
+    padding-left: 4px;
+}
+
+.right {
+    padding-left: 4px;
+    right: 0;
+}
+
+.toggle-switch {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(240, 240, 240, 0.4);
+    border-radius: 3px;
+
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.toggle-checkbox:checked+.toggle .toggle-switch {
+    left: 50%;
+}
+
+.toggle-checkbox:checked+.toggle .left {
+    opacity: 1;
+}
+
+.toggle-checkbox:checked+.toggle .right {
+    opacity: 1;
+}
+
+body .copyright {
+    position: absolute;
+    height: 2rem;
+    font-size: 12px;
+    text-align: center;
+bottom: 0;
+color: white;
+text-decoration: none;
+
+}
+
+body .copyright:hover {
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
+
